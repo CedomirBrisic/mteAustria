@@ -1,0 +1,7 @@
+@media only screen and(min-width: 992px) {
+    @import url('./indexDesktop.css');
+}
+
+@media only screen and(max-width: 991px) {
+    @import url('./indexMobile.css');
+}

@@ -1,0 +1,1133 @@
+@import "./fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Campton Black";
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    height: 8.5vw;
+    background-image: url("./images/mobile/heder.png");
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+}
+
+
+.showroom-container {
+    width: 100%;
+    height: 95.25vh;
+    overflow: hidden;
+    position: fixed;
+    top: 8.5vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.showroom-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.heder-menu {
+    width: 100%;
+    height: 113.70370370370371VW;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+}
+
+.hide-menu {
+    display: none;
+}
+
+.show-menu {
+    display: block;
+}
+
+.ppt1-video-desktop {
+    display: none
+}
+
+.ppt1-video-mobile {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.ppt1-scroll-arrows {
+    width: 12.222222222222221VW;
+    height: 14.351851851851851VW;
+    background-image: url("./images/scroll.png");
+    background-size: 100% 100%;
+    z-index: 2;
+    position: absolute;
+    left: 43.888888888888886VW;
+    bottom: 6.851851851851852VW;
+    animation: scrollArrows 1s infinite;
+    z-index: 10;
+}
+
+@keyframes scrollArrows {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.33;
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+/*    ---------------------------        SCREENS      ---------------------------------------  */
+/*    ---------------------------        SCREENS      ---------------------------------------  */
+/*    ---------------------------        SCREENS      ---------------------------------------  */
+.ppt2-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/mobile/serije.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 10;
+}
+
+.ppt2-background:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/mobile/serijeRed.png");
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 1
+}
+
+.ppt3-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/mobile/televizija.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 20;
+}
+
+.ppt3-background:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/mobile/televizijaBlue.png");
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 1
+}
+
+.ppt4-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/mobile/calling.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 30;
+}
+
+.ppt4-background:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/mobile/callingRed.png");
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 1
+}
+
+
+.ppt5-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/mobile/homephone.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 40;
+}
+
+.ppt5-background:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/mobile/homephoneBlue.png");
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 1
+}
+
+.ppt6-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/mobile/topponuda.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 50;
+
+}
+
+.ppt6-background:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/mobile/topponudaRed.png");
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 1
+}
+
+.footerikonice-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/mobile/footerikonice.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 400;
+}
+
+.footerBlue-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/mobile/footerBlue.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 401;
+}
+
+
+
+
+
+
+
+
+/*    ---------------------------        SNAKES      ---------------------------------------  */
+/*    ---------------------------        SNAKES      ---------------------------------------  */
+/*    ---------------------------        SNAKES      ---------------------------------------  */
+.snake-white-1 {
+    width: 52.407407407407405VW;
+    height: 15.277777777777779VW;
+    background-color: #ffffff;
+    position: absolute;
+    left: -29.259259259259256VW;
+    top: 3.5185185185185186VW;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-1 {
+    color: #ff1b2a;
+    font-size: 9.25925925925926VW;
+    font-weight: 700;
+    position: relative;
+    left: 93vw;
+}
+
+
+.snake-white-2 {
+    width: 64.44444444444444VW;
+    height: 15.277777777777779VW;
+    background-color: #ffffff;
+    position: absolute;
+    position: absolute;
+    left: 100vw;
+    top: 3.5185185185185186VW;
+    z-index: 102;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-2 {
+    color: #ff1b2a;
+    font-size: 9.25925925925926VW;
+    font-weight: 700;
+    position: relative;
+    left: -57.6vw;
+}
+
+
+.snake-white-3 {
+    width: 64.44444444444444VW;
+    height: 15.277777777777779VW;
+    background-color: #ffffff;
+    position: absolute;
+    position: absolute;
+    left: 100VW;
+    top: 3.5185185185185186VW;
+    z-index: 103;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-3 {
+    color: #ff1b2a;
+    font-size: 9.25925925925926VW;
+    font-weight: 700;
+    position: relative;
+    left: -46.2VW;
+}
+
+
+.snake-white-4 {
+    width: 84.53703703703704VW;
+    height: 15.277777777777779VW;
+    background-color: #ffffff;
+    position: absolute;
+    position: absolute;
+    left: 100VW;
+    top: 3.5185185185185186VW;
+    z-index: 104;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-4 {
+    color: #ff1b2a;
+    font-size: 9.25925925925926VW;
+    font-weight: 700;
+    position: relative;
+    left: -64.30vw;
+}
+
+.snake-white-5 {
+    width: 84.53703703703704VW;
+    height: 15.277777777777779VW;
+    background-color: #ffffff;
+    position: absolute;
+    position: absolute;
+    left: 100VW;
+    top: 3.5185185185185186VW;
+    z-index: 105;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-5 {
+    color: #ff1b2a;
+    font-size: 9.25925925925926VW;
+    font-weight: 700;
+    position: relative;
+    left: -66vw;
+}
+
+
+
+/* ---------------------------------------------------------------------------------- */
+.snake-blue-1 {
+    width: 15.277777777777779VW;
+    height: 45VW;
+    background-color: #002240;
+    position: absolute;
+    left: 12.407407407407407VW;
+    top: -12VW;
+    z-index: 11;
+}
+
+.snake-red-1 {
+    width: 36VW;
+    height: 15.277777777777779VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    right: -12vw;
+    bottom: 12VW;
+    z-index: 2;
+}
+
+.snake-red-2 {
+    width: 15.277777777777779VW;
+    height: 45VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    right: 3VW;
+    top: -46VW;
+    z-index: 11;
+}
+
+.snake-blue-2 {
+    width: 15.277777777777779VW;
+    height: 42VW;
+    background-color: #002240;
+    position: absolute;
+    left: 12.407407407407407VW;
+    bottom: -44vw;
+    z-index: 11;
+}
+
+.snake-red-3 {
+    width: 15.277777777777779VW;
+    height: 46vw;
+    background-color: #ff1b2a;
+    position: absolute;
+    left: 16.5VW;
+    bottom: -48VW;
+    z-index: 21;
+}
+
+.whitesnake-1 {
+    width: 34VW;
+    height: 15.277777777777779VW;
+    background-color: #ffffff;
+    position: absolute;
+    left: -36vw;
+    top: 42VW;
+    z-index: 22;
+}
+
+.snake-blue-3 {
+    width: 48VW;
+    height: 15.277777777777779VW;
+    background-color: #002240;
+    position: absolute;
+    right: -50vw;
+    top: 105VW;
+    z-index: 23;
+}
+
+.snake-blue-4 {
+    width: 15.277777777777779VW;
+    height: 102VW;
+    background-color: #002240;
+    position: absolute;
+    right: 5VW;
+    bottom: -104vw;
+    z-index: 31;
+}
+
+.snake-red-4 {
+    width: 45VW;
+    height: 15.277777777777779VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    left: -46vw;
+    top: 93vw;
+    z-index: 31;
+}
+
+.whitesnake-2 {
+    width: 15.277777777777779VW;
+    height: 45VW;
+    background-color: #ffffff;
+    position: absolute;
+    left: 12vw;
+    top: -46VW;
+    z-index: 32;
+}
+
+.snake-blue-5 {
+    width: 41.40625VW;
+    height: 15.277777777777779VW;
+    background-color: #002240;
+    position: absolute;
+    right: -42VW;
+    top: 98vw;
+    z-index: 42;
+}
+
+.snake-red-5 {
+    width: 15.277777777777779VW;
+    height: 48VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    right: 0VW;
+    bottom: -50vw;
+    z-index: 43;
+}
+
+
+.snake-red-6 {
+    width: 15.277777777777779VW;
+    height: 34VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    left: 11.666666666666666VW;
+    top: -35vw;
+    z-index: 41;
+}
+
+
+.whitesnake-3 {
+    width: 32vw;
+    height: 15.677083333333334VW;
+    background-color: #ffffff;
+    position: absolute;
+    right: -34VW;
+    top: 27VW;
+    z-index: 52;
+}
+
+
+.snake-blue-6 {
+    width: 15.677083333333334VW;
+    height: 41.40625VW;
+    background-color: #002240;
+    position: absolute;
+    left: 10.42VW;
+    bottom: -42;
+    z-index: 51;
+}
+
+.snake-red-7 {
+    width: 15.677083333333334VW;
+    height: 62vw;
+    background-color: #ff1b2a;
+    position: absolute;
+    right: 25.5VW;
+    top: -64vw;
+    z-index: 51;
+}
+
+
+
+
+
+
+/*  ---------------------------        TITLES      ---------------------------------------  */
+/*  ---------------------------        TITLES      ---------------------------------------  */
+/*  ---------------------------        TITLES      ---------------------------------------  */
+.ppt1-title1 {
+    color: #ffffff;
+    font-size: 11.11111111111111VW;
+    font-weight: 700;
+    position: absolute;
+    left: 2.7777777777777777VW;
+    bottom: 48VW;
+    z-index: 5;
+    /* opacity: 0; */
+}
+
+.ppt1-title2 {
+    color: #ffffff;
+    font-size: 11.11111111111111VW;
+    font-weight: 700;
+    position: absolute;
+    left: 2.7777777777777777VW;
+    bottom: 34VW;
+    z-index: 15;
+    /* opacity: 0; */
+}
+
+
+
+.ppt2-title-desktop {
+    display: none;
+}
+
+.ppt2-title-mobile {
+    color: #ffffff;
+    font-size: 6.018518518518518VW;
+    font-weight: 700;
+    position: absolute;
+    right: 5.9VW;
+    bottom: 49.907407407407405VW;
+    z-index: 15;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt2-subtitle-desktop {
+    display: none
+}
+
+.ppt2-subtitle-mobile {
+    font-size: 4.62962962962963VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: -100%;
+    bottom: 36.48148148148148VW;
+    z-index: 15;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt2-button {
+    width: 29.259259259259256VW;
+    height: 8.055555555555555VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 3.7037037037037033VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.9VW;
+    bottom: -50%;
+    z-index: 15;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.ppt2-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+
+
+.ppt3-title1 {
+    color: #ffffff;
+    font-size: 6.018518518518518VW;
+    font-weight: 700;
+    position: absolute;
+    right: -100%;
+    bottom: 49.907407407407405VW;
+    z-index: 25;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt3-subtitle1 {
+    font-size: 4.62962962962963VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: -100%;
+    bottom: 36.48148148148148VW;
+    z-index: 25;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt3-button {
+    width: 29.259259259259256VW;
+    height: 8.055555555555555VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 3.7037037037037033VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.9VW;
+    bottom: -50%;
+    z-index: 25;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.ppt3-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+.ppt4-title1-desktop {
+    display: none;
+}
+
+.ppt4-title1-mobile {
+    color: #ffffff;
+    font-size: 6.018518518518518VW;
+    font-weight: 700;
+    position: absolute;
+    right: -100%;
+    bottom: 49.907407407407405VW;
+    z-index: 35;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt4-subtitle1 {
+    font-size: 4.62962962962963VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: -100%;
+    bottom: 36.48148148148148VW;
+    z-index: 35;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt4-button {
+    width: 29.259259259259256VW;
+    height: 8.055555555555555VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 3.7037037037037033VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.9VW;
+    bottom: -50%;
+    z-index: 35;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.ppt4-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+
+.ppt5-title1 {
+    color: #ffffff;
+    font-size: 6.018518518518518VW;
+    font-weight: 700;
+    position: absolute;
+    right: 5.9vw;
+    bottom: 49.907407407407405VW;
+    z-index: 45;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt5-subtitle1 {
+    font-size: 4.62962962962963VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: 5.9VW;
+    bottom: 36.48148148148148VW;
+    z-index: 45;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt5-button {
+    width: 29.259259259259256VW;
+    height: 8.055555555555555VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 3.7037037037037033VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.9VW;
+    bottom: 25.37037037037037VW;
+    z-index: 45;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.ppt5-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+
+.ppt6-title1 {
+    color: #ffffff;
+    font-size: 6.018518518518518VW;
+    font-weight: 700;
+    position: absolute;
+    right: 5.9vw;
+    bottom: 56.2037037037037VW;
+    z-index: 55;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt6-subtitle1-desktop {
+    display: none;
+}
+
+.ppt6-subtitle1-mobile {
+    font-size: 4.62962962962963VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: 5.9VW;
+    bottom: 36.48148148148148VW;
+    z-index: 55;
+    text-align: right;
+    opacity: 0;
+}
+
+.ppt6-button1 {
+    width: 29.259259259259256VW;
+    height: 8.055555555555555VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 3.7037037037037033VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.9VW;
+    bottom: 25.37037037037037VW;
+    z-index: 55;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.ppt6-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+.ppt6-button2 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ---------------------------        SIDEBAR      ---------------------------------------  */
+/*  ---------------------------        SIDEBAR      ---------------------------------------  */
+/*  ---------------------------        SIDEBAR      ---------------------------------------  */
+.sidebar-container {
+    width: 92.5VW;
+    height: 20.185185185185187VW;
+    position: absolute;
+    right: 5.9VW;
+    bottom: 0;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.sidebar-marker {
+    width: 20%;
+    height: 100%;
+    background-color: #ff1b2a;
+    position: relative;
+    left: -20.2%;
+}
+
+
+/*  ---------------------------        SIDEBAR - SERIJE      ---------------------------------------  */
+.sidebar-serije-wrapper {
+    width: 18.5vw;
+    height: 20.185185185185187VW;
+    position: absolute;
+    right: 79.9VW;
+    bottom: 0;
+    z-index: 301;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.sidebar-serije-left {
+    width: 0;
+    height: 100%;
+}
+
+.sidebar-serije {
+    width: 9.907407407407408VW;
+    height: 12.037037037037036VW;
+    background-image: url("./images/sidebarserije.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+    position: absolute;
+    bottom: 4.62962962962963VW;
+}
+
+
+.sidebar-serije-wrapper:hover>.sidebar-serije {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*  ---------------------------        SIDEBAR - TELEVIZIJA      ---------------------------------------  */
+.sidebar-televizija-wrapper {
+    width: 18.5vw;
+    height: 20.185185185185187VW;
+    position: absolute;
+    right: 61.4VW;
+    bottom: 0;
+    z-index: 301;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.sidebar-televizija-left {
+    width: 0;
+    height: 100%;
+}
+
+.sidebar-televizija {
+    width: 13.240740740740742VW;
+    height: 12.407407407407407VW;
+    background-image: url("./images/sidebartelevizija.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+    position: absolute;
+    bottom: 4.62962962962963VW;
+}
+
+
+.sidebar-televizija-wrapper:hover>.sidebar-televizija {
+    transform: scale(1.1);
+}
+
+
+
+/*  ---------------------------        SIDEBAR - CALLING      ---------------------------------------  */
+.sidebar-calling-wrapper {
+    width: 18.5vw;
+    height: 20.185185185185187VW;
+    position: absolute;
+    right: 42.9VW;
+    bottom: 0;
+    z-index: 301;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.sidebar-calling-left {
+    width: 0;
+    height: 100%;
+}
+
+.sidebar-calling {
+    width: 10.185185185185185VW;
+    height: 13.796296296296296VW;
+    background-image: url("./images/sidebarcalling.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+    position: absolute;
+    bottom: 4.62962962962963VW;
+}
+
+
+.sidebar-calling-wrapper:hover>.sidebar-calling {
+    transform: scale(1.1);
+}
+
+
+
+
+/*  ---------------------------        SIDEBAR - HOMEPHONE      ---------------------------------------  */
+.sidebar-homephone-wrapper {
+    width: 18.5vw;
+    height: 20.185185185185187VW;
+    position: absolute;
+    right: 24.4VW;
+    bottom: 0;
+    z-index: 301;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.sidebar-homephone-left {
+    width: 0;
+    height: 100%;
+}
+
+.sidebar-homephone {
+    width: 14.907407407407408VW;
+    height: 13.148148148148147VW;
+    background-image: url("./images/sidebarhomephone.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+    position: absolute;
+    bottom: 4.62962962962963VW;
+}
+
+
+.sidebar-homephone-wrapper:hover>.sidebar-homephone {
+    transform: scale(1.1);
+}
+
+
+
+/*  ---------------------------        SIDEBAR - TOPPONUDA      ---------------------------------------  */
+.sidebar-topponuda-wrapper {
+    width: 18.5vw;
+    height: 20.185185185185187VW;
+    position: absolute;
+    right: 5.9VW;
+    bottom: 0;
+    z-index: 301;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.sidebar-topponuda-left {
+    width: 0;
+    height: 100%;
+}
+
+.sidebar-topponuda {
+    width: 15.277777777777779VW;
+    height: 13.148148148148147VW;
+    background-image: url("./images/sidebartopponuda.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+    position: absolute;
+    bottom: 4.62962962962963VW;
+}
+
+.sidebar-topponuda-wrapper:hover>.sidebar-topponuda {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ---------------------------        TRIGGERS      ---------------------------------------  */
+/*  ---------------------------        TRIGGERS      ---------------------------------------  */
+/*  ---------------------------        TRIGGERS      ---------------------------------------  */
+
+
+
+.break-zone {
+    height: 42vh;
+}
+
+.ppt1-initial-trigger {
+    margin-top: 100vh;
+    height: 20vh;
+}
+
+
+
+.ppt2-background-trigger {
+    height: 100vh;
+    padding-top: 34vh;
+}
+
+.ppt2-backgroundafter-trigger {
+    height: 40vh;
+}
+
+
+
+.ppt3-background-trigger {
+    height: 100vh;
+    padding-top: 34vh;
+}
+
+.ppt3-backgroundafter-trigger {
+    height: 40vh;
+}
+
+
+
+
+.ppt4-background-trigger {
+    height: 100vh;
+    padding-top: 34vh;
+}
+
+.ppt4-backgroundafter-trigger {
+    height: 40vh;
+}
+
+
+.ppt5-background-trigger {
+    height: 100vh;
+    padding-top: 34vh;
+}
+
+.ppt5-backgroundafter-trigger {
+    height: 40vh;
+}
+
+.ppt6-background-trigger {
+    height: 100vh;
+}
+
+.ppt6-backgroundafter-trigger {
+    height: 40vh;
+}
+
+.footer-trigger {
+    height: 100vh;
+}

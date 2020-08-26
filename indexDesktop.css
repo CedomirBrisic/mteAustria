@@ -1,0 +1,1720 @@
+@import "./fonts.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Campton Black";
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+.center-it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.heder-menu {
+    display: none;
+}
+
+/*    ---------------------------        HEADER      ---------------------------------------  */
+/*    ---------------------------        HEADER      ---------------------------------------  */
+/*    ---------------------------        HEADER      ---------------------------------------  */
+.heder-menu {
+    display: none;
+}
+
+.header-container {
+    width: 100%;
+    height: 10.463vh;
+    position: fixed;
+    top: 0;
+}
+
+.header-top-wrapper {
+    width: 100%;
+    height: 50%;
+    background-color: #9c060c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.90625VW;
+}
+
+.header-socialicons-wrapper {
+    width:5.677083333333333VW;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-socialicons-wrapper>a {
+    width: 0.9375VW;
+    height: 0.9375VW;
+}
+
+.single-socialicon {
+    width: 0.9375VW;
+    height: 0.9375VW;
+}
+
+
+.heder-top-right-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.heder-topbar-title {
+    font-size: 0.9375VW;
+    font-weight: 500;
+    color: #ffffff;
+
+}
+
+.heder-topbar-title:hover {
+    cursor: pointer;
+    color: #ff1b2a;
+}
+
+.mrg-lft-13 {
+    margin-left: 1.3020833333333335VW;
+}
+
+.hovscale {
+    transition: transform 0.2s
+}
+
+.hovscale:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.red-borderline {
+    height: 1.6145833333333335VW;
+    border-left: 0.10416666666666667VW solid #fc1a29;
+}
+
+.language-dropdown-arrow {
+    width: 0.5729166666666666VW;
+    height: 0.46875VW;
+    margin-left: 0.625VW;
+    margin-right: 1.5104166666666667VW;
+}
+
+.search-bar {
+    width: 12.812499999999998VW;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding-left: 0.5vw;
+    padding-right: 1.5vw;
+    font-size: 1vw;
+    color: #ffffff;
+}
+
+.searchicon {
+    width: 0.9895833333333333VW;
+    height: 0.9895833333333333VW;
+    position: relative;
+    left: -1.5vw;
+    bottom: 0.2vw;
+}
+
+
+
+
+
+
+
+
+
+.header-bottom-wrapper {
+    width: 100%;
+    height: 50%;
+    background-color: #ff1b2a;
+    display: flex;
+    align-items: center;
+    padding: 0 3.90625VW;
+}
+
+.heder-logo {
+    width: 5.677083333333333VW;
+    height: 1.25VW;
+    margin-right: 4.739583333333333VW;
+}
+
+.heder-bottombar-title {
+    font-size: 0.9375VW;
+    color: #ffffff;
+    font-weight: 500;
+    margin-right: 3.24VW;
+    white-space: nowrap;
+}
+
+.heder-bottombar-title:hover {
+    cursor: pointer;
+    color: #9c060c;
+}
+
+.user-icon {
+    width:1.25VW;
+    height: 1.4583333333333333VW;
+    margin-left: -2vw;
+}
+
+.user-icon>img {
+    width: 100%;
+    height: 100%;
+}
+
+.mrgleft {
+    margin-left: 33VW;
+}
+
+
+
+
+
+
+
+
+
+
+
+.showroom-container {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: fixed;
+    top: 10.463vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.showroom-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ppt1-container {
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/pocetnapozadina.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ppt1-video-desktop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: 12;
+}
+
+.telefon-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 12;
+    overflow: hidden;
+}
+
+.telefon-ram {
+    width: 100%;
+    height: 100%;
+    z-index: 13;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 13;
+    opacity: 0;
+
+}
+
+.plusznak {
+    width: 4.739583333333333VW;
+    height: 4.479166666666667VW;
+    position: absolute;
+    top: 14VW;
+    left: 22.7VW;
+    z-index: 15;
+    opacity: 0;
+}
+
+.ppt1-video-mobile {
+    display: none;
+}
+
+.ppt1-scroll-arrows {
+    width: 2.7083333333333335VW;
+    height: 3.177083333333333VW;
+    background-image: url("./images/scroll.png");
+    background-size: 100% 100%;
+    z-index: 2;
+    position: absolute;
+    left: 48.5%;
+    bottom: 6vw;
+    animation: scrollArrows 1s infinite;
+    z-index: 14;
+}
+
+@keyframes scrollArrows {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.33;
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+/*    ---------------------------        SCREENS      ---------------------------------------  */
+/*    ---------------------------        SCREENS      ---------------------------------------  */
+/*    ---------------------------        SCREENS      ---------------------------------------  */
+
+.ppt2-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/kombi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+
+.ppt2-background::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/kombiRed.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+
+
+.ppt3-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/televizija.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+}
+
+.ppt3-background::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/televizijaBlue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1
+}
+
+
+
+.ppt4-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/calling.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 30;
+}
+
+.ppt4-background::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/callingRed.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1
+}
+
+.ppt4-background2-viewport{
+    width: 19vw;
+    height: 40VW;
+    position: absolute;
+    top: 1.5vw;
+    left: -25vw;
+    overflow: hidden;
+    border-radius: 2vw;
+}
+
+.ppt4-background2{
+    width: 100vw;
+    height: 90vh;
+    background-image: url("./images/telefonija-pozadina2.png");
+    background-size: 100vw 90vh;
+    background-position: 0 10vh;
+    background-attachment: fixed;
+}
+
+ .telefonija-telefon-okvir{
+    width: 26.145833333333336VW;
+    height: 41.510416666666664VW;
+    position: absolute;
+    top: 1.40625VW;
+    left: -28vw;
+    z-index: 32;
+}
+
+
+
+
+.ppt5-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/topponuda.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 40;
+}
+
+.ppt5-background::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/topponudaBlue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1
+}
+
+
+
+.ppt6-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/serije.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 50;
+}
+
+.ppt6-background::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/serijeRed.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1
+}
+
+
+
+/*  ---------------------------        FOOTER      ---------------------------------------  */
+/*  ---------------------------        FOOTER      ---------------------------------------  */
+/*  ---------------------------        FOOTER      ---------------------------------------  */
+
+.footerGray-container {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 400;
+    background-color: #dcdddf;
+}
+
+.footerGray-wrapper {
+    width: 75.57291666666667VW;
+    height: 14.114583333333334VW;
+    margin: 0 auto;
+    margin-top: 6.354166666666666VW;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-single-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-email-icon {
+    opacity: 0;
+    width: 5.052083333333333VW;
+    height: 3.5937499999999996VW;
+    margin-bottom: 3.3333333333333335VW;
+}
+
+.footerGrey-title {
+    font-size: 1.3541666666666667VW;
+    color: #002741;
+    font-weight: 700;
+    line-height: 1.3541666666666667VW;
+    margin-bottom: 1.6145833333333335VW;
+    opacity: 0;
+}
+
+.footerGrey-subtitle {
+    font-size: 1.1458333333333333VW;
+    line-height: 1.3541666666666667VW;
+    color: #002741;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0;
+}
+
+.red-title {
+    color: #cc2229;
+}
+
+
+.footer-call-icon {
+    opacity: 0;
+    width: 4.947916666666666VW;
+    height: 4.947916666666666VW;
+    margin-bottom: 2.7083333333333335VW;
+}
+
+.footer-socialmedia-icon {
+    opacity: 0;
+    width: 4.583333333333333VW;
+    height: 4.947916666666666VW;
+    margin-bottom: 2.65625VW;
+}
+
+.footer-poslovnice-icon {
+    opacity: 0;
+    width: 3.958333333333333VW;
+    height: 4.791666666666667VW;
+    margin-bottom: 2.7083333333333335VW;
+}
+
+
+
+
+.footerBlue-container {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-image: url("./images/footerBlue.png");
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 400;
+}
+
+.footerBlue-countries-container {
+    width: 100%;
+    height: 5.1VW;
+    padding: 1.75VW 3.958333333333333VW 1.1979166666666667VW 3.958333333333333VW;
+    position: absolute;
+    top: 0;
+    background-color: #002240;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBlue-countries-left-wrapper {
+    height: 100%;
+    display: flex;
+}
+
+.footer-logo {
+    width: 6.770833333333333VW;
+    height: 1.5104166666666667VW;
+}
+
+.footer-bold-title {
+    font-size: 1.1458333333333333VW;
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 1.25VW;
+    align-self: flex-end;
+}
+
+
+.footerBlue-countries-right-wrapper {
+    width: 44.53125VW;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0.5vw;
+}
+
+.footer-countrysite-title {
+    font-size: 1.4583333333333333VW;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-countrysite-title:hover {
+    cursor: pointer;
+    color: #ff1b2a;
+}
+
+.footer-snake {
+    width: 24%;
+    height: 101%;
+    background-color: #ff1b2a;
+    position: absolute;
+    top: 0;
+    left: -25%;
+
+}
+
+
+
+
+
+
+
+/*    ---------------------------        SNAKES      ---------------------------------------  */
+/*    ---------------------------        SNAKES      ---------------------------------------  */
+/*    ---------------------------        SNAKES      ---------------------------------------  */
+.snake-white-1 {
+    width: 32.447916666666664VW;
+    height: 8.59375VW;
+    background-color: #ffffff;
+    position: absolute;
+    left: -18.385416666666668VW;
+    top: 5VW;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-1 {
+    color: #ff1b2a;
+    font-size: 5.208333333333334VW;
+    font-weight: 700;
+    position: relative;
+    left: 95vw;
+    /* right: -100%; */
+}
+
+
+
+.snake-white-2 {
+    width: 40.729166666666664VW;
+    height: 8.59375VW;
+    background-color: #ffffff;
+    position: absolute;
+    right: -42vw;
+    top: 5VW;
+    z-index: 102;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-2 {
+    color: #ff1b2a;
+    font-size: 5.208333333333334VW;
+    font-weight: 700;
+    position: relative;
+    right: 37vw;
+}
+
+
+
+
+.snake-white-3 {
+    width: 42.70833333333333VW;
+    height: 8.59375VW;
+    background-color: #ffffff;
+    position: absolute;
+    left: 100vw;
+    top: 5VW;
+    z-index: 103;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid purple; */
+}
+
+.snake-whiteTitle-3 {
+    color: #ff1b2a;
+    font-size: 5.208333333333334VW;
+    font-weight: 700;
+    position: relative;
+    right: 37.9vw;
+}
+
+
+
+
+.snake-white-4 {
+    width: 44.7VW;
+    height: 8.59375VW;
+    background-color: #ffffff;
+    position: absolute;
+    right: -45vw;
+    top: 5VW;
+    z-index: 104;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-4 {
+    color: #ff1b2a;
+    font-size: 5.208333333333334VW;
+    font-weight: 700;
+    position: relative;
+    right: 40.75vw;
+}
+
+
+.snake-white-5 {
+    width: 43.447916666666664VW;
+    height: 8.59375VW;
+    background-color: #ffffff;
+    position: absolute;
+    right: -45VW;
+    top: 5VW;
+    z-index: 105;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.snake-whiteTitle-5 {
+    color: #ff1b2a;
+    font-size: 5.208333333333334VW;
+    font-weight: 700;
+    position: relative;
+    left: -25.2vw;
+}
+
+
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+.snake-blue-1 {
+    width: 8.645833333333334VW;
+    height: 25.3125VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    left: 20.75vw;
+    top: -5.885416666666667VW;
+    z-index: 13;
+}
+
+.snake-red-1 {
+    width: 24VW;
+    height: 8.59375VW;
+    background-color: #002240;
+    position: absolute;
+    right: -8vw;
+    top: 12.5VW;
+    z-index: 14;
+}
+
+
+
+
+
+.snake-red-2 {
+    width: 8.59375VW;
+    height: 28.072916666666664VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    right: 6.71875VW;
+    top: -29VW;
+    z-index: 14;
+}
+
+.snake-blue-2 {
+    width: 8.59375VW;
+    height: 25.3125VW;
+    background-color: #002240;
+    position: absolute;
+    left: 9vw;
+    bottom: -26vw;
+    z-index: 1;
+}
+
+.snake-blue-2-ghost {
+    width: 8.3VW;
+    height: 25.3125VW;
+    background-color: #002240;
+    position: absolute;
+    left: 9vw;
+    bottom: -26vw;
+    z-index: 15;
+    opacity: 0.666;
+}
+
+.snake-red-3 {
+    width: 8.59375VW;
+    height: 28.072916666666664VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    left: 12.1875VW;
+    bottom: -29VW;
+    z-index: 21;
+}
+
+.whitesnake-1 {
+    width: 15.104166666666666VW;
+    height: 8.59375VW;
+    background-color: #ffffff;
+    position: absolute;
+    left: -16vw;
+    bottom: -2.3958333333333335VW;
+    z-index: 21;
+}
+
+.snake-blue-3 {
+    width: 25.3125VW;
+    height: 6.4VW;
+    background-color: #002240;
+    position: absolute;
+    right: -26vw;
+    bottom: 4.270833333333333VW;
+    z-index: 21;
+}
+
+
+
+.snake-blue-4 {
+    width: 8.59375VW;
+    height: 25.3125VW;
+    background-color: #002240;
+    position: absolute;
+    right: 5.260416666666667VW;
+    bottom: -26vw;
+    z-index: 32;
+}
+
+
+.snake-red-4 {
+    width: 28.072916666666664VW;
+    height: 8.59375VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    left: -29vw;
+    bottom: 3vw;
+    z-index: 32;
+}
+
+
+.whitesnake-2 {
+    width: 8.59375VW;
+    height: 25.3125VW;
+    background-color: #ffffff;
+    position: absolute;
+    right: 69.01041666666666VW;
+    bottom: -26VW;
+    z-index: 33;
+}
+
+
+
+
+.snake-blue-5 {
+    width: 41.40625VW;
+    height: 7.6VW;
+    background-color: #ffffff;
+    position: absolute;
+    right: -42VW;
+    bottom: 5.2vw;
+    z-index: 44;
+}
+
+.snake-red-5 {
+    width: 8.59375VW;
+    height: 19.739583333333332VW;
+    background-color: #002240;
+    position: absolute;
+    right: 25VW;
+    bottom: -20vw;
+    z-index: 43;
+}
+
+.snake-red-6 {
+    width: 8.59375VW;
+    height: 19.739583333333332VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    left: 11.666666666666666VW;
+    top: -20vw;
+    z-index: 41;
+}
+
+
+
+
+.whitesnake-3 {
+    width: 15.677083333333334VW;
+    height: 8.59375VW;
+    background-color: #ffffff;
+    position: absolute;
+    right: -16VW;
+    bottom: -3.5VW;
+    z-index: 52;
+}
+
+.snake-blue-6 {
+    width: 8.59375VW;
+    height: 41.40625VW;
+    background-color: #002240;
+    position: absolute;
+    left: 10.42VW;
+    bottom: -42;
+    z-index: 51;
+}
+
+.snake-red-7 {
+    width: 8.59375VW;
+    height: 19.739583333333332VW;
+    background-color: #ff1b2a;
+    position: absolute;
+    right: 25VW;
+    top: -20vw;
+    z-index: 51;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ---------------------------        TITLES      ---------------------------------------  */
+/*  ---------------------------        TITLES      ---------------------------------------  */
+/*  ---------------------------        TITLES      ---------------------------------------  */
+/* .ppt1-title1 {
+    color: #ffffff;
+    font-size: 5.208333333333334VW;
+    font-weight: 700;
+    position: absolute;
+    left: 9.79166667VW;
+    bottom: 17.15625VW;
+    z-index: 15;
+
+} */
+
+.ppt1-title2 {
+    color: #ffffff;
+    font-size: 3.6458333333333335VW;
+    font-weight: 700;
+    position: absolute;
+    left: 9.79166667VW;
+    bottom: 11.15625VW;
+    z-index: 15;
+    /* opacity: 0; */
+}
+
+.ppt2-title-mobile {
+    display: none;
+}
+
+.ppt2-title-desktop {
+    color: #ffffff;
+    font-size: 2.34375VW;
+    font-weight: 700;
+    position: absolute;
+    right: 5.5VW;
+    top: 14.6VW;
+    z-index: 15;
+    text-align: right;
+    line-height: 3.2vw;
+    opacity: 0;
+}
+
+.ppt2-subtitle-mobile {
+    display: none;
+}
+
+.ppt2-subtitle-desktop {
+    font-size: 1.875VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: 5.5VW;
+    top: 26VW;
+    z-index: 15;
+    text-align: right;
+}
+
+.ppt2-button {
+    width: 19.270833333333336VW;
+    height: 5.208333333333334VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff1b2a;
+    color: #ffffff;
+    font-size: 2.2916666666666665VW;
+    font-weight: 700;
+    position: absolute;
+    right: 5.5VW;
+    top: 36.5625VW;
+    z-index: 15;
+    opacity: 1;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.ppt2-button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #ff1b2a;
+}
+
+
+
+
+
+.ppt3-title1 {
+    color: #ffffff;
+    font-size: 2.34375VW;
+    font-weight: 700;
+    position: absolute;
+    right: -33vw;
+    top: 16.6VW;
+    z-index: 25;
+    text-align: right;
+    line-height: 3.2vw;
+    opacity: 0;
+}
+
+
+.ppt3-subtitle1 {
+    font-size: 1.875VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: -45vw;
+    top: 28VW;
+    z-index: 25;
+    text-align: right;
+}
+
+
+
+.ppt3-button {
+    width: 12.291666666666666VW;
+    height: 3.3854166666666665VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 1.5625VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.5VW;
+    top: 100%;
+    z-index: 25;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.ppt3-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+.ppt4-title1-mobile {
+    display: none;
+}
+
+.ppt4-title1-desktop {
+    color: #ffffff;
+    font-size: 2.34375VW;
+    font-weight: 700;
+    position: absolute;
+    right: -37vw;
+    top: 16.6VW;
+    z-index: 35;
+    text-align: right;
+    line-height: 3.2vw;
+    opacity: 0;
+}
+
+
+.ppt4-subtitle1 {
+    font-size: 1.875VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: -44vw;
+    top: 26VW;
+    z-index: 35;
+    text-align: right;
+}
+
+
+.ppt4-button {
+    width: 12.291666666666666VW;
+    height: 3.3854166666666665VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 1.5625VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.5VW;
+    top: 100%;
+    z-index: 35;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.ppt4-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.ppt5-title1 {
+    color: #ffffff;
+    font-size: 2.34375VW;
+    font-weight: 700;
+    position: absolute;
+    right: -30vw;
+    top: 16.6VW;
+    z-index: 45;
+    text-align: right;
+    line-height: 3.2vw;
+    opacity: 0;
+}
+
+
+
+.ppt5-subtitle1 {
+    font-size: 1.875VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: -38vw;
+    top: 24VW;
+    z-index: 45;
+    text-align: right;
+}
+
+
+.ppt5-button {
+    width: 12.291666666666666VW;
+    height: 3.3854166666666665VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 1.5625VW;
+    font-weight: 500;
+    position: absolute;
+    right: 5.5VW;
+    top: 100%;
+    z-index: 45;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.ppt5-button:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.ppt6-title1 {
+    color: #ffffff;
+    font-size: 2.34375VW;
+    font-weight: 700;
+    position: absolute;
+    right: -28vw;
+    top: 16.6VW;
+    z-index: 55;
+    text-align: right;
+    line-height: 3.2vw;
+    opacity: 0;
+}
+
+
+.ppt6-subtitle1-mobile {
+    display: none;
+}
+
+.ppt6-subtitle1-desktop {
+    font-size: 1.875VW;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    right: -42vw;
+    top: 28VW;
+    z-index: 55;
+    text-align: right;
+}
+
+
+
+.ppt6-button1 {
+    width: 12.291666666666666VW;
+    height: 3.3854166666666665VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #59595b;
+    font-size: 1.5625VW;
+    font-weight: 500;
+    position: absolute;
+    right: -25vw;
+    top: 34.71875VW;
+    z-index: 55;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.ppt6-button1:hover {
+    cursor: pointer;
+    background-color: #59595b;
+    color: #ffffff;
+}
+
+/* .ppt6-button2 {
+    width: 12.5VW;
+    height: 5.208333333333334VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff1b2a;
+    color: #ffffff;
+    font-size: 2.2916666666666665VW;
+    font-weight: 700;
+    position: absolute;
+    right: 5.5vw;
+    top: 100%;
+    z-index: 55;
+    text-decoration: none;
+    border-radius: 1vw;
+    opacity: 0;
+}
+
+.ppt6-button2:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #ff1b2a;
+} */
+
+
+
+
+
+
+
+
+/*  ---------------------------        SIDEBAR      ---------------------------------------  */
+/*  ---------------------------        SIDEBAR      ---------------------------------------  */
+/*  ---------------------------        SIDEBAR      ---------------------------------------  */
+.sidebar-container {
+    width: 8.697916666666666VW;
+    height: 27.8125VW;
+    position: absolute;
+    left: 0;
+    top: 9.78125VW;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.sidebar-marker {
+    width: 100%;
+    height: 20%;
+    background-color: #ff1b2a;
+    position: relative;
+    top: -21%;
+}
+
+
+/*  ---------------------------        SIDEBAR - SERIJE      ---------------------------------------  */
+.sidebar-serije-wrapper {
+    width: 8.697916666666666VW;
+    height: 5.5625VW;
+    position: absolute;
+    left: -8.697916666666666VW;
+    top: 32.03125VW;
+    /* top: 9.78125VW; */
+    z-index: 301;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.sidebar-serije-left {
+    width: 3.4895833333333335VW;
+    height: 100%;
+}
+
+.sidebar-serije {
+    width: 3.177083333333333VW;
+    height: 3.5937499999999996VW;
+    background-image: url("./images/sidebarserije.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+}
+
+.sidebar-serije-wrapper:hover {
+    cursor: pointer;
+}
+
+.sidebar-serije-wrapper:hover>.sidebar-serije {
+    transform: scale(1.1);
+}
+
+/*  ---------------------------        SIDEBAR - TELEVIZIJA      ---------------------------------------  */
+.sidebar-televizija-wrapper {
+    width: 8.697916666666666VW;
+    height: 5.5625VW;
+    position: absolute;
+    left: -8.697916666666666VW;
+    top: 15.34375VW;
+    z-index: 301;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.sidebar-televizija-left {
+    width: 2.8125VW;
+    height: 100%;
+}
+
+.sidebar-televizija {
+    width: 4.270833333333333VW;
+    height: 3.5416666666666665VW;
+    background-image: url("./images/sidebartelevizija.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+}
+
+.sidebar-televizija-wrapper:hover {
+    cursor: pointer;
+}
+
+.sidebar-televizija-wrapper:hover>.sidebar-televizija {
+    transform: scale(1.1);
+}
+
+
+
+/*  ---------------------------        SIDEBAR - TELEFONIJA      ---------------------------------------  */
+.sidebar-calling-wrapper {
+    width: 8.697916666666666VW;
+    height: 5.5625VW;
+    position: absolute;
+    left: -8.697916666666666VW;
+    top: 20.90625VW;
+    z-index: 301;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.sidebar-calling-left {
+    width: 2.65625VW;
+    height: 100%;
+}
+
+.sidebar-calling {
+    width: 4.583333333333333VW;
+    height: 4.427083333333334VW;
+    background-image: url("./images/sidebartelefonija.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+}
+
+.sidebar-calling-wrapper:hover {
+    cursor: pointer;
+}
+
+.sidebar-calling-wrapper:hover>.sidebar-calling {
+    transform: scale(1.1);
+}
+
+
+/*  ---------------------------        SIDEBAR - TOP PONUDA      ---------------------------------------  */
+.sidebar-homephone-wrapper {
+    width: 8.697916666666666VW;
+    height: 5.5625VW;
+    position: absolute;
+    left: -8.697916666666666VW;
+    top: 26.46875VW;
+    z-index: 301;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.sidebar-homephone-left {
+    width: 2.5VW;
+    height: 100%;
+}
+
+.sidebar-homephone {
+    width: 4.947916666666666VW;
+    height: 4.166666666666666VW;
+    background-image: url("./images/sidebartopponuda.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+}
+
+.sidebar-homephone-wrapper:hover {
+    cursor: pointer;
+}
+
+.sidebar-homephone-wrapper:hover>.sidebar-homephone {
+    transform: scale(1.1);
+}
+
+
+/*  ---------------------------        SIDEBAR - KOMBI      ---------------------------------------  */
+.sidebar-topponuda-wrapper {
+    width: 8.697916666666666VW;
+    height: 5.5625VW;
+    position: absolute;
+    /* left: -8.697916666666666VW;
+    top: 32.03125VW; */
+    left: -8.697916666666666VW;
+    top: 9.78125VW;
+    z-index: 301;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.sidebar-topponuda-left {
+    width: 2.1875VW;
+    height: 100%;
+}
+
+.sidebar-topponuda {
+    width: 5.364583333333333VW;
+    height: 4.21875VW;
+    background-image: url("./images/sidebarkombipaket.png");
+    background-size: 100% 100%;
+    transition: transform 0.2s;
+}
+
+.sidebar-topponuda-wrapper:hover {
+    cursor: pointer;
+}
+
+.sidebar-topponuda-wrapper:hover>.sidebar-topponuda {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*  ---------------------------        TRIGGERS      ---------------------------------------  */
+/*  ---------------------------        TRIGGERS      ---------------------------------------  */
+/*  ---------------------------        TRIGGERS      ---------------------------------------  */
+
+
+
+.break-zone {
+    height: 42vh;
+}
+
+.ppt1-initial-trigger {
+    margin-top: 100vh;
+    height: 20vh;
+}
+
+
+
+.ppt2-background-trigger {
+    height: 100vh;
+    padding-top: 34vh;
+}
+
+.ppt2-backgroundafter-trigger {
+    height: 40vh;
+}
+
+
+
+.ppt3-background-trigger {
+    height: 100vh;
+    padding-top: 34vh;
+}
+
+.ppt3-backgroundafter-trigger {
+    height: 40vh;
+}
+
+
+
+
+.ppt4-background-trigger {
+    height: 100vh;
+    padding-top: 34vh;
+}
+
+.ppt4-backgroundafter-trigger {
+    height: 240vh;
+}
+
+
+.ppt5-background-trigger {
+    height: 100vh;
+}
+
+.ppt5-backgroundafter-trigger {
+    height: 320vh;
+    padding-top: 90vh;
+}
+
+.ppt6-background-trigger {
+    height: 100vh;
+}
+
+.ppt6-backgroundafter-trigger {
+    height: 40vh;
+}
+
+.footer-trigger {
+    height: 100vh;
+}
+
+.ppt2-sidebar-target {}
+
+
+
+
+.topponuda-telefon1 {
+    width: 22VW;
+    height: 26.145833333333336VW;
+    position: absolute;
+    left: 37.5VW;
+    /* top: 100%; */
+    top: 12vw;
+    z-index: 46;
+}
+
+.topponuda-telefon1:hover {
+    cursor: pointer;
+}
+
+.topponuda-telefon1-red {
+    width: 16.666666666666664VW;
+    /* width: 0; */
+    height: 8.854166666666668VW;
+    position: absolute;
+    left: 24.375VW;
+    /* left: 42vw; */
+    top: 21vw;
+    z-index: 45;
+    background-color: #ff1b2a;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.topponuda-telefon1-red-title {
+    font-size: 2.3958333333333335VW;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: end;
+    position: relative;
+    top: 1.2VW;
+    right: 1.4vw;
+    /* right: -24vw; */
+
+}
+
+
+
+
+.topponuda-telefon1-blue {
+    width: 16.666666666666664VW;
+    /* width: 0; */
+    height: 5.052083333333333VW;
+    position: absolute;
+    left: 26.927083333333336VW;
+    /* left: 50vw; */
+    top: 29.8vw;
+    z-index: 44;
+    background-color: #002240;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.topponuda-telefon1-blue-title {
+    color: #ffffff;
+    font-size: 2.3958333333333335VW;
+    font-weight: 300;
+    position: relative;
+    top: 1.2VW;
+    /* right: -23.6VW; */
+    right: -3.6VW;
+    top: 1VW;
+}
+
+.title-red {
+    color: #ff1b2a;
+    font-weight: 700;
+}
+
+
+
+.topponuda-telefon2 {
+    width: 16.40625VW;
+    height: 22.34375VW;
+    position: absolute;
+    left: 40.572916666666664VW;
+    top: 100%;
+    z-index: 46;
+}
+
+.topponuda-telefon2-red {
+    /* width: 16.666666666666664VW; */
+    width: 0;
+    height: 8.854166666666668VW;
+    position: absolute;
+    /* left: 24.375VW; */
+    left: 42vw;
+    top: 21vw;
+    z-index: 45;
+    background-color: #ff1b2a;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.topponuda-telefon2-red-title {
+    font-size: 2.3958333333333335VW;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: end;
+    position: relative;
+    top: 1.2VW;
+    /* right: 1.4vw; */
+    right: -24vw;
+
+}
+
+
+
+
+.topponuda-telefon2-blue {
+    /* width: 16.666666666666664VW; */
+    width: 0;
+    height: 5.052083333333333VW;
+    position: absolute;
+    /* left: 26.927083333333336VW; */
+    left: 50vw;
+    top: 29.8vw;
+    z-index: 44;
+    background-color: #002240;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.topponuda-telefon2-blue-title {
+    color: #ffffff;
+    font-size: 2.3958333333333335VW;
+    font-weight: 300;
+    position: relative;
+    top: 1.2VW;
+    right: -23.6VW;
+    top: 1VW;
+}
+
+
+.topponuda-telefon2:hover {
+    cursor: pointer;
+}
